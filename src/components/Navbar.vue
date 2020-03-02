@@ -317,7 +317,7 @@ export default {
 }
 
 .fs-menu__main-links-list {
-  margin-right: 25.8%;
+  margin-right: 27.8%;
 
   @media screen and (max-width: $breakpoint-mobile) {
     margin-right: 0;
