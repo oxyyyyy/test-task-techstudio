@@ -3,19 +3,22 @@
     <Navbar />
     <router-view />
     <Footer />
+    <CustomCursor />
   </div>
 </template>
 
 <script>
 import "normalize.css";
 
+import CustomCursor from "@/components/UI/CustomCursor";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/sections/Footer";
 
 export default {
   components: {
     Navbar,
-    Footer
+    Footer,
+    CustomCursor
   }
 };
 </script>
@@ -58,7 +61,9 @@ address {
 button {
   background-color: initial;
   border: initial;
-  cursor: pointer;
+  cursor: none;
+  padding: 0;
+  outline: none;
 }
 
 .container {

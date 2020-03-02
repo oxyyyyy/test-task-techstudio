@@ -8,7 +8,7 @@
         <img src="@/assets/img/logo.svg" alt="" />
       </router-link>
       <div class="nav__container">
-        <div
+        <button
           class="menu-toggle"
           :class="{ active: menuIsActive }"
           @click="toggleMenu"
@@ -16,7 +16,7 @@
           <div class="menu-toggle__one"></div>
           <div class="menu-toggle__two"></div>
           <div class="menu-toggle__three"></div>
-        </div>
+        </button>
       </div>
     </div>
     <div class="fs-menu" :class="{ active: menuIsActive }">
@@ -206,7 +206,6 @@ export default {
 .menu-toggle {
   width: 40px;
   height: 30px;
-  cursor: pointer;
   position: relative;
   z-index: 800;
 

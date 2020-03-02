@@ -25,17 +25,12 @@ export default {
     title: String
   },
   methods: {
-    // TODO: Fix hover
     onMouseEnter(event) {
       const element = this.$el;
       const x = event.pageX - element.offsetLeft;
       const y = event.pageY - element.offsetTop;
       this.top = y;
       this.left = x;
-      this.$nextTick(() => {
-        this.top = null;
-        this.left = null;
-      });
     },
     onMouseOut(event) {
       const element = this.$el;
@@ -43,10 +38,6 @@ export default {
       const y = event.pageY - element.offsetTop;
       this.top = y;
       this.left = x;
-      this.$nextTick(() => {
-        this.top = null;
-        this.left = null;
-      });
     }
   }
 };
@@ -80,7 +71,7 @@ export default {
     height: 0;
     border-radius: 50%;
     background-color: #fbfbfb;
-    transition: all 0.4s ease-in-out;
+    transition: height 0.4s ease-in-out, width 0.4s ease-in-out;
     transform: translate(-50%, -50%);
     z-index: 3;
   }
