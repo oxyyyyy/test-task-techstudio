@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="nav">
-      <div class="nav__container">
+    <div class="nav" :class="{ active: menuIsActive }">
+      <div class="nav__container nav__phone-container">
         <a href="tel:+380990002111">+38 099 000 2 111</a>
       </div>
-      <router-link to="/" class="nav__container">
+      <router-link to="/" class="nav__container nav__logo-container">
         <img src="@/assets/img/logo.svg" alt="" />
       </router-link>
       <div class="nav__container">
@@ -73,6 +73,7 @@
 
 <script>
 export default {
+  name: "Navbar",
   data() {
     return {
       menuIsActive: false,
@@ -173,10 +174,32 @@ export default {
   padding: 30px 40px;
   background: #ffffff;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 600;
+  transition: all 0.3s ease;
+
+  a {
+    transition: opacity 0.3s ease;
+  }
+
+  img {
+    transition: opacity 0.3s ease;
+  }
+
+  &.active {
+    background-color: transparent;
+
+    a {
+      opacity: 0;
+    }
+
+    img {
+      opacity: 0;
+    }
+  }
 }
 
 .menu-toggle {
@@ -261,6 +284,21 @@ export default {
 
 .fs-menu__body-item--big {
   font-size: 24px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    transform: translateY(-50%) scale(0.8);
+    opacity: 0;
+    border: 1px solid #f3f3f3;
+    width: 60px;
+    height: 60px;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+  }
 }
 
 .fs-menu__main-links-list {
@@ -280,6 +318,11 @@ export default {
     &.router-link-active {
       transform: translateX(0.8rem);
       color: $font-accent-color;
+
+      &::before {
+        opacity: 0.3;
+        transform: translateY(-50%) scale(1);
+      }
     }
   }
 }
@@ -335,6 +378,25 @@ export default {
 
   &:not(:last-child) {
     margin-bottom: 14px;
+  }
+}
+
+.nav__phone-container {
+  @media screen and (max-width: $breakpoint-mobile) {
+    display: none;
+  }
+}
+
+.nav__logo-container {
+  position: absolute;
+  top: 53.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media screen and (max-width: $breakpoint-mobile) {
+    position: relative;
+    left: initial;
+    top: 5px;
+    transform: none;
   }
 }
 </style>

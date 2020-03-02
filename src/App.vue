@@ -18,12 +18,17 @@ export default {
 </script>
 
 <style lang="scss">
+* {
+  box-sizing: border-box;
+}
+
 #app {
   font-family: "Gilroy", sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 18px;
   color: $font-color;
+  padding-top: 96px;
 }
 
 a {
@@ -41,5 +46,11 @@ ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.container {
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 </style>
