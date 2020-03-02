@@ -6,7 +6,7 @@
       </div>
       <div class="services__card-face services__card-face--back">
         <router-link
-          to="#"
+          :to="cardInnerLink.link"
           v-for="cardInnerLink in card.innerLinks"
           :key="cardInnerLink.id"
           class="services__card-inner-links"
@@ -108,7 +108,7 @@ export default {
   transition: all 0.35s linear;
 }
 
-.services__card-item:hover {
+.services__card-item-deck:hover .services__card-item {
   transform: rotateY(180deg);
 }
 </style>

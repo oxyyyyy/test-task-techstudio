@@ -37,35 +37,43 @@ export default {
           innerLinks: [
             {
               id: 0,
-              title: "Лайтбоксы"
+              title: "Лайтбоксы",
+              link: "/some-route"
             },
             {
               id: 1,
-              title: "Объёмные буквы"
+              title: "Объёмные буквы",
+              link: "/some-route"
             },
             {
               id: 2,
-              title: "Вывески"
+              title: "Вывески",
+              link: "/some-route"
             },
             {
               id: 3,
-              title: "Штендеры"
+              title: "Штендеры",
+              link: "/some-route"
             },
             {
               id: 4,
-              title: "Каркасы"
+              title: "Каркасы",
+              link: "/some-route"
             },
             {
               id: 5,
-              title: "Монтаж"
+              title: "Монтаж",
+              link: "/some-route"
             },
             {
               id: 6,
-              title: "Фрезерная порезка"
+              title: "Фрезерная порезка",
+              link: "/some-route"
             },
             {
               id: 7,
-              title: "Лазерная порезка"
+              title: "Лазерная порезка",
+              link: "/some-route"
             }
           ]
         },
@@ -75,35 +83,43 @@ export default {
           innerLinks: [
             {
               id: 0,
-              title: "Лайтбоксы"
+              title: "Лайтбоксы",
+              link: "/some-route"
             },
             {
               id: 1,
-              title: "Объёмные буквы"
+              title: "Объёмные буквы",
+              link: "/some-route"
             },
             {
               id: 2,
-              title: "Вывески"
+              title: "Вывески",
+              link: "/some-route"
             },
             {
               id: 3,
-              title: "Штендеры"
+              title: "Штендеры",
+              link: "/some-route"
             },
             {
               id: 4,
-              title: "Каркасы"
+              title: "Каркасы",
+              link: "/some-route"
             },
             {
               id: 5,
-              title: "Монтаж"
+              title: "Монтаж",
+              link: "/some-route"
             },
             {
               id: 6,
-              title: "Фрезерная порезка"
+              title: "Фрезерная порезка",
+              link: "/some-route"
             },
             {
               id: 7,
-              title: "Лазерная порезка"
+              title: "Лазерная порезка",
+              link: "/some-route"
             }
           ]
         },
@@ -113,35 +129,43 @@ export default {
           innerLinks: [
             {
               id: 0,
-              title: "Лайтбоксы"
+              title: "Лайтбоксы",
+              link: "/some-route"
             },
             {
               id: 1,
-              title: "Объёмные буквы"
+              title: "Объёмные буквы",
+              link: "/some-route"
             },
             {
               id: 2,
-              title: "Вывески"
+              title: "Вывески",
+              link: "/some-route"
             },
             {
               id: 3,
-              title: "Штендеры"
+              title: "Штендеры",
+              link: "/some-route"
             },
             {
               id: 4,
-              title: "Каркасы"
+              title: "Каркасы",
+              link: "/some-route"
             },
             {
               id: 5,
-              title: "Монтаж"
+              title: "Монтаж",
+              link: "/some-route"
             },
             {
               id: 6,
-              title: "Фрезерная порезка"
+              title: "Фрезерная порезка",
+              link: "/some-route"
             },
             {
               id: 7,
-              title: "Лазерная порезка"
+              title: "Лазерная порезка",
+              link: "/some-route"
             }
           ]
         },
@@ -151,35 +175,43 @@ export default {
           innerLinks: [
             {
               id: 0,
-              title: "Лайтбоксы"
+              title: "Лайтбоксы",
+              link: "/some-route"
             },
             {
               id: 1,
-              title: "Объёмные буквы"
+              title: "Объёмные буквы",
+              link: "/some-route"
             },
             {
               id: 2,
-              title: "Вывески"
+              title: "Вывески",
+              link: "/some-route"
             },
             {
               id: 3,
-              title: "Штендеры"
+              title: "Штендеры",
+              link: "/some-route"
             },
             {
               id: 4,
-              title: "Каркасы"
+              title: "Каркасы",
+              link: "/some-route"
             },
             {
               id: 5,
-              title: "Монтаж"
+              title: "Монтаж",
+              link: "/some-route"
             },
             {
               id: 6,
-              title: "Фрезерная порезка"
+              title: "Фрезерная порезка",
+              link: "/some-route"
             },
             {
               id: 7,
-              title: "Лазерная порезка"
+              title: "Лазерная порезка",
+              link: "/some-route"
             }
           ]
         },
@@ -189,35 +221,43 @@ export default {
           innerLinks: [
             {
               id: 0,
-              title: "Лайтбоксы"
+              title: "Лайтбоксы",
+              link: "/some-route"
             },
             {
               id: 1,
-              title: "Объёмные буквы"
+              title: "Объёмные буквы",
+              link: "/some-route"
             },
             {
               id: 2,
-              title: "Вывески"
+              title: "Вывески",
+              link: "/some-route"
             },
             {
               id: 3,
-              title: "Штендеры"
+              title: "Штендеры",
+              link: "/some-route"
             },
             {
               id: 4,
-              title: "Каркасы"
+              title: "Каркасы",
+              link: "/some-route"
             },
             {
               id: 5,
-              title: "Монтаж"
+              title: "Монтаж",
+              link: "/some-route"
             },
             {
               id: 6,
-              title: "Фрезерная порезка"
+              title: "Фрезерная порезка",
+              link: "/some-route"
             },
             {
               id: 7,
-              title: "Лазерная порезка"
+              title: "Лазерная порезка",
+              link: "/some-route"
             }
           ]
         },
@@ -227,35 +267,43 @@ export default {
           innerLinks: [
             {
               id: 0,
-              title: "Лайтбоксы"
+              title: "Лайтбоксы",
+              link: "/some-route"
             },
             {
               id: 1,
-              title: "Объёмные буквы"
+              title: "Объёмные буквы",
+              link: "/some-route"
             },
             {
               id: 2,
-              title: "Вывески"
+              title: "Вывески",
+              link: "/some-route"
             },
             {
               id: 3,
-              title: "Штендеры"
+              title: "Штендеры",
+              link: "/some-route"
             },
             {
               id: 4,
-              title: "Каркасы"
+              title: "Каркасы",
+              link: "/some-route"
             },
             {
               id: 5,
-              title: "Монтаж"
+              title: "Монтаж",
+              link: "/some-route"
             },
             {
               id: 6,
-              title: "Фрезерная порезка"
+              title: "Фрезерная порезка",
+              link: "/some-route"
             },
             {
               id: 7,
-              title: "Лазерная порезка"
+              title: "Лазерная порезка",
+              link: "/some-route"
             }
           ]
         }
@@ -282,10 +330,12 @@ export default {
     position: absolute;
     bottom: 120px;
     right: 435px;
+    animation: bubbleFloat 10s ease-in-out 0s infinite both;
 
     @media screen and (max-width: $breakpoint-tablet) {
       right: 50%;
       transform: translateX(50%);
+      animation: none;
     }
   }
 
@@ -335,6 +385,20 @@ export default {
 
   @media screen and (max-width: $breakpoint-mobile) {
     grid-template-columns: auto;
+  }
+}
+
+@keyframes bubbleFloat {
+  from {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-6%) scale(1.06);
+  }
+
+  to {
+    transform: translateY(0) scale(1);
   }
 }
 </style>

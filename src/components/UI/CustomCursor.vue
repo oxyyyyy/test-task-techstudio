@@ -1,5 +1,5 @@
 <template>
-  <div class="cursor-field">
+  <div class="cursor-field" :class="{ hidden: isMobileDevice }">
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
   </div>
@@ -21,42 +21,55 @@ window.addEventListener("mousemove", function() {
 
 export default {
   name: "CustomCursor",
+  data() {
+    return {
+      isMobileDevice: false
+    };
+  },
   mounted: function() {
-    TweenMax.to({}, 0.016, {
-      repeat: -1,
-      onRepeat: function() {
-        posX += (mouseX - posX) / 9;
-        posY += (mouseY - posY) / 9;
+    if (
+      !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      TweenMax.to({}, 0.016, {
+        repeat: -1,
+        onRepeat: function() {
+          posX += (mouseX - posX) / 9;
+          posY += (mouseY - posY) / 9;
 
-        TweenMax.set(".cursor-follower", {
-          css: {
-            left: posX - 12,
-            top: posY - 12
-          }
-        });
-        TweenMax.set(".cursor", {
-          css: {
-            left: mouseX,
-            top: mouseY
-          }
-        });
-      }
-    });
+          TweenMax.set(".cursor-follower", {
+            css: {
+              left: posX - 12,
+              top: posY - 12
+            }
+          });
+          TweenMax.set(".cursor", {
+            css: {
+              left: mouseX,
+              top: mouseY
+            }
+          });
+        }
+      });
 
-    document.querySelectorAll("a, button").forEach(item => {
-      item.addEventListener("mouseenter", function() {
-        document.querySelectorAll(".cursor")[0].classList.add("active");
-        document
-          .querySelectorAll(".cursor-follower")[0]
-          .classList.add("active");
+      document.querySelectorAll("a, button").forEach(item => {
+        item.addEventListener("mouseenter", function() {
+          document.querySelectorAll(".cursor")[0].classList.add("active");
+          document
+            .querySelectorAll(".cursor-follower")[0]
+            .classList.add("active");
+        });
+        item.addEventListener("mouseout", function() {
+          document.querySelectorAll(".cursor")[0].classList.remove("active");
+          document
+            .querySelectorAll(".cursor-follower")[0]
+            .classList.remove("active");
+        });
       });
-      item.addEventListener("mouseout", function() {
-        document.querySelectorAll(".cursor")[0].classList.remove("active");
-        document
-          .querySelectorAll(".cursor-follower")[0]
-          .classList.remove("active");
-      });
-    });
+    } else {
+      this.isMobileDevice = true;
+    }
   }
 };
 </script>
@@ -75,6 +88,10 @@ body {
   z-index: 999;
   pointer-events: none;
   mix-blend-mode: difference;
+
+  &.hidden {
+    display: none;
+  }
 }
 
 .cursor {

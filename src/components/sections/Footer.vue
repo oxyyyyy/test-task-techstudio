@@ -35,6 +35,7 @@
           <a
             href="https://goo.gl/maps/2QU1D3iqQwCgYpKm9"
             class="footer__link-item"
+            target="_blank"
             >Саксаганского, 6а</a
           >
           <p class="footer__link-item">10:00 — 22:00, каждый день</p>

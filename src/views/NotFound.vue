@@ -16,6 +16,7 @@ export default {
   justify-content: center;
   align-items: center;
   padding-top: 10vh;
+  background-color: #fff;
 }
 
 .notFound__title {

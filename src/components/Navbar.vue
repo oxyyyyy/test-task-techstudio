@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="nav" :class="{ active: menuIsActive }">
+    <div class="nav" :class="{ active: menuIsActive, mounted: navIsMounted }">
       <div class="nav__container nav__phone-container">
         <a href="tel:+380990002111">+38 099 000 2 111</a>
       </div>
@@ -76,6 +76,7 @@ export default {
   name: "Navbar",
   data() {
     return {
+      navIsMounted: false,
       menuIsActive: false,
       menuLinks: [
         {
@@ -162,6 +163,11 @@ export default {
     toggleMenu() {
       this.menuIsActive = !this.menuIsActive;
     }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.navIsMounted = true;
+    }, 100);
   }
 };
 </script>
@@ -179,7 +185,9 @@ export default {
   left: 0;
   width: 100%;
   z-index: 600;
-  transition: all $trans-prop;
+  transform: translateY(-30%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 
   a {
     transition: opacity $trans-prop;
@@ -200,6 +208,11 @@ export default {
     img {
       opacity: 0;
     }
+  }
+
+  &.mounted {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -255,10 +268,12 @@ export default {
   justify-content: space-between;
   overflow-x: hidden;
   overflow-y: auto;
+  transform: scale(1.2);
 
   &.active {
     opacity: 1;
     visibility: visible;
+    transform: scale(1);
   }
 
   a {
@@ -354,6 +369,7 @@ export default {
     left: 70%;
     transform: translate(-50%, -50%);
     pointer-events: none;
+    animation: bubbleFloat 10s ease-in-out 0s infinite both;
   }
 }
 
@@ -397,6 +413,20 @@ export default {
     left: initial;
     top: 5px;
     transform: none;
+  }
+}
+
+@keyframes bubbleFloat {
+  from {
+    transform: translate(-50%, -47%) scale(1);
+  }
+
+  50% {
+    transform: translate(-50%, -53%) scale(1.05);
+  }
+
+  to {
+    transform: translate(-50%, -47%) scale(1);
   }
 }
 </style>
