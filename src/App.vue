@@ -2,6 +2,7 @@
   <div id="app">
     <Navbar />
     <router-view />
+    <Footer />
   </div>
 </template>
 
@@ -9,10 +10,12 @@
 import "normalize.css";
 
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/sections/Footer";
 
 export default {
   components: {
-    Navbar
+    Navbar,
+    Footer
   }
 };
 </script>
@@ -46,6 +49,16 @@ ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  background-color: initial;
+  border: initial;
+  cursor: pointer;
 }
 
 .container {

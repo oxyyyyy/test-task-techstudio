@@ -40,7 +40,7 @@
         </ul>
       </div>
       <div class="fs-menu__footer">
-        <div class="fs-menu__container">
+        <address class="fs-menu__container">
           <p class="fs-menu__footer-item">Киев, Украина</p>
           <a
             href="https://goo.gl/maps/2QU1D3iqQwCgYpKm9"
@@ -49,7 +49,7 @@
             >Саксаганского, 6а</a
           >
           <p class="fs-menu__footer-item">10:00 — 22:00, каждый день</p>
-        </div>
+        </address>
         <div class="fs-menu__container">
           <a href="#" class="fs-menu__footer-item">facebook</a>
           <a href="#" class="fs-menu__footer-item">telegram</a>
@@ -179,18 +179,19 @@ export default {
   left: 0;
   width: 100%;
   z-index: 600;
-  transition: all 0.3s ease;
+  transition: all $trans-prop;
 
   a {
-    transition: opacity 0.3s ease;
+    transition: opacity $trans-prop;
   }
 
   img {
-    transition: opacity 0.3s ease;
+    transition: opacity $trans-prop;
   }
 
   &.active {
     background-color: transparent;
+    transition: none;
 
     a {
       opacity: 0;
@@ -248,7 +249,7 @@ export default {
   z-index: 500;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease;
+  transition: all $trans-prop;
   color: $fs-menu-font-color;
   display: flex;
   flex-direction: column;
@@ -279,7 +280,7 @@ export default {
 
 .fs-menu__body-item {
   font-size: 18px;
-  transition: all 0.3s ease;
+  transition: all $trans-prop;
 }
 
 .fs-menu__body-item--big {
@@ -297,7 +298,7 @@ export default {
     width: 60px;
     height: 60px;
     border-radius: 999px;
-    transition: all 0.3s ease;
+    transition: all $trans-prop;
   }
 }
 
