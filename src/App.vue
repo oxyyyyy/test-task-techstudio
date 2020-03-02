@@ -24,6 +24,39 @@ export default {
 </script>
 
 <style lang="scss">
+@font-face {
+  font-family: "Gilroy";
+  font-weight: normal;
+  font-style: normal;
+  src: url("/fonts/Gilroy/Gilroy-Regular.eot");
+  src: url("/fonts/Gilroy/Gilroy-Regular?#iefix") format("embedded-opentype"),
+    url("/fonts/Gilroy/Gilroy-Regular.woff2") format("woff2"),
+    url("/fonts/Gilroy/Gilroy-Regular.woff") format("woff"),
+    url("/fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-style: normal;
+  src: url("/fonts/Gilroy/Gilroy-Medium.eot");
+  src: url("/fonts/Gilroy/Gilroy-Medium?#iefix") format("embedded-opentype"),
+    url("/fonts/Gilroy/Gilroy-Medium.woff2") format("woff2"),
+    url("/fonts/Gilroy/Gilroy-Medium.woff") format("woff"),
+    url("/fonts/Gilroy/Gilroy-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-style: normal;
+  src: url("/fonts/Gilroy/Gilroy-Semibold.eot");
+  src: url("/fonts/Gilroy/Gilroy-Semibold?#iefix") format("embedded-opentype"),
+    url("/fonts/Gilroy/Gilroy-Semibold.woff2") format("woff2"),
+    url("/fonts/Gilroy/Gilroy-Semibold.woff") format("woff"),
+    url("/fonts/Gilroy/Gilroy-Semibold.ttf") format("truetype");
+}
+
 * {
   box-sizing: border-box;
 }
